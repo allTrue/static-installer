@@ -1,0 +1,13 @@
+{
+    "name": "lintrue/lib-installer",
+    "description": "composer-plugin test",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JiaSheng Liao",
+            "email": "jiamisslin@gmail.com"
+        }
+    ],
+    "require": {}
+}
