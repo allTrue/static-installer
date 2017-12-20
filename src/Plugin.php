@@ -11,6 +11,6 @@ class Plugin implements PluginInterface
 {
     public function activate(Composer $composer, IOInterface $io)
     {
-        $composer->getPluginManager()->addInstaller(new LintrueFramework($io,$composer));
+        $composer->getInstallationManager()->addInstaller(new LintrueFramework($io,$composer));
     }
 }
