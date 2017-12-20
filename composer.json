@@ -2,12 +2,22 @@
     "name": "lintrue/lib-installer",
     "description": "composer-plugin test",
     "type": "composer-plugin",
-    "license": "MIT",
+    "license": "Apache-2.0",
     "authors": [
         {
-            "name": "JiaSheng Liao",
+            "name": "lintrue",
             "email": "jiamisslin@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "composer-plugin-api": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "lintrue\\composer\\": "src"
+        }
+    },
+    "extra": {
+        "class": "lintrue\\composer\\Plugin"
+    }
 }
