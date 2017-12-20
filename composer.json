@@ -1,11 +1,11 @@
 {
-    "name": "lintrue/lib-installer",
-    "description": "composer-plugin test",
+    "name": "lintrue/static-installer",
+    "description": "install static source for project",
     "type": "composer-plugin",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "lintrue",
+            "name": "fbard",
             "email": "jiamisslin@gmail.com"
         }
     ],
