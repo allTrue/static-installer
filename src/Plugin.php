@@ -3,6 +3,7 @@
 namespace lintrue\composer;
 
 use Composer\Composer;
+use Composer\Installer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
 
