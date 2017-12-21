@@ -5,11 +5,14 @@ composer 自定义 *lintrue-static* 安装类型安装器，只要定义包类�
 ## Usage
 ```
 {
-  ...
-  "type":"lintrue-static",
-  "extra":{
-    "static-path":"public/static",//安装路径
-  }
+    ...
+    "type":"lintrue-static",
+    "extra":{
+        "static-path":"public/static",//安装路径
+    },
+    "require": {
+        "lintrue/static-installer": "^v1.0"
+    },
   ...
 }
 ```
