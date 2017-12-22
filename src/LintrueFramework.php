@@ -27,19 +27,17 @@ class LintrueFramework extends LibraryInstaller
     public function getInstallPath(PackageInterface $package)
     {
         if ($this->composer->getPackage()) {
-            $extra = $this->composer->getPackage()->getExtra();
-            $config = $this->composer->getPackage()->getConfig();
-            var_dump($package->getExtra());
-            var_dump($extra);
-            var_dump($config);
+            $extra = $package->getExtra();
+            if(empty($extra)){
+                $extra = $this->composer->getPackage()->getExtra();
+            }
             if (!empty($extra['static-path'])) {
                 $extra['static-path'] = str_replace(['/','\\'],DIRECTORY_SEPARATOR,
                     trim('\\',trim('/',$extra['static-path'])));
-                var_dump($extra['static-path']);
                 return $extra['static-path'];
             }
         }else{
-            var_dump('package is null');
+            echo 'installing package to default path:public'.DIRECTORY_SEPARATOR.'static....';
         }
 
         return 'public'.DIRECTORY_SEPARATOR.'static';

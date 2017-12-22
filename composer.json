@@ -1,8 +1,8 @@
 {
     "name": "lintrue/static-installer",
-    "description": "install static source for project",
+    "description": "将静态资源包安装到指定目录",
     "type": "composer-plugin",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "authors": [
         {
             "name": "lintrue",
