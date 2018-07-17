@@ -32,9 +32,8 @@ class LintrueFramework extends LibraryInstaller
                 $extra = $this->composer->getPackage()->getExtra();
             }
             if (!empty($extra['static-path'])) {
-//                $extra['static-path'] = str_replace(['/','\\'],DIRECTORY_SEPARATOR,
-//                    trim('\\',trim('/',$extra['static-path'])));
-                var_dump($extra['static-path']);
+                $extra['static-path'] = str_replace(['/','\\'],DIRECTORY_SEPARATOR,
+                trim('\\',trim('/',$extra['static-path'])));
                 return $extra['static-path'];
             }
         }else{
